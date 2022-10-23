@@ -23,6 +23,46 @@
       tr:nth-child(even) {
         background-color: #dddddd;
       }
+
+      .container {
+        position: relative;
+        width: 50%;
+      }
+
+        .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+
+        .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+        .container:hover .image {
+        opacity: 0.3;
+      }
+
+        .container:hover .middle {
+        opacity: 1;
+      }
+
+        .text {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
 </style>
 
 </head>
@@ -77,71 +117,103 @@
     </p>
   </div>
 
-  <div class="w3-container w3-padding-32" id="preliminaries">
-    <div>
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Preliminaries</b></h3>
-    <h4>Do's and Don'ts</h4>
+    <div class="w3-container w3-padding-32" id="preliminaries">
+        <div>
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Preliminaries</b></h3>
+            <h4>Do's and Don'ts</h4>
 
-    <p>
-        Before moving forward, we should be reminded of some of the do's and don'ts of exercise to prevent injuries and accidents. Also, these will be your guide to whether you are fit to exercise for the day or not. 
-        Exercise is essential, but if you don't know the do's and don'ts, you might suffer in the end.
-    </p>
+            <p>
+                Before moving forward, we should be reminded of some of the do's and don'ts of exercise to prevent injuries and accidents. Also, these will be your guide to whether you are fit to exercise for the day or not. 
+                Exercise is essential, but if you don't know the do's and don'ts, you might suffer in the end.
+            </p>
 
-    <p>
-        Here are some of the Do's and Don'ts:
-    </p>
+            <p>
+                Here are some of the Do's and Don'ts:
+            </p>
 
-    <table>
-        <tr>
-            <th><b>Do's</b></th>
-            <th><b>Don'ts</b></th>
-        </tr>
-        <tr>
-            <th>Do exercise when you're in good condition.</th>
-            <th>Don't engagae in physical activity / exercise when you are not feeling well.</th>
-        </tr>
-        <tr>
-            <th>Do 30-40 minutes workout twice or thrice a week.</th>
-            <th>Don't overlook yourself while exercising.</th>
-        </tr>
-        <tr>
-            <th>Do ensure that you have covered all body areas for your exercise.</th>
-            <th>Don't always focus on a single form of training.</th>
-        </tr>
-        <tr>
-            <th>Do eat enough food and drinkk enough liquids to avoid passing out.</th>
-            <th>Don't eat heavy meals or drink too many liquids before exercising.</th>
-        </tr>
-        <tr>
-            <th>Do make exercise a habit.</th>
-            <th>Don't be too obsessed with exercise.</th>
-        </tr>
-    </table>
+            <table>
+                <tr>
+                    <th><b>Do's</b></th>
+                    <th><b>Don'ts</b></th>
+                </tr>
+                <tr>
+                    <th>Do exercise when you're in good condition.</th>
+                    <th>Don't engagae in physical activity / exercise when you are not feeling well.</th>
+                </tr>
+                <tr>
+                    <th>Do 30-40 minutes workout twice or thrice a week.</th>
+                    <th>Don't overlook yourself while exercising.</th>
+                </tr>
+                <tr>
+                    <th>Do ensure that you have covered all body areas for your exercise.</th>
+                    <th>Don't always focus on a single form of training.</th>
+                </tr>
+                <tr>
+                    <th>Do eat enough food and drinkk enough liquids to avoid passing out.</th>
+                    <th>Don't eat heavy meals or drink too many liquids before exercising.</th>
+                </tr>
+                <tr>
+                    <th>Do make exercise a habit.</th>
+                    <th>Don't be too obsessed with exercise.</th>
+                </tr>
+            </table>
 
-    <p>Please click on the photos below to see the videos! The one on the left is a group's output, while the other one is individual. Remember to use your AdDU account.</p>
-    <p>
-    <a href="https://drive.google.com/file/d/1ZWBWXbF4JDOwsWdVCUpkjLubAIoHrFCO/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/groupInfo.png" style="float:left; padding:20px; width:620px; height:370px"></a>
-    <a href="https://drive.google.com/file/d/1AoptwlZh77ugoKIZgp3dObDZeUJSQUmV/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/indivInfo.png" style="float:right; padding:20px; width:620px; height:370px"></a>
-    <br>
-    </p>
-    </div>
+            <p>Please click on the photos below to see the videos! The one on the left is a group's output, while the other one is individual. Remember to use your AdDU account.</p>
+            <p>
 
-    <br><br>
+                <div class="container" style="float:left">
+                    <a href="https://drive.google.com/file/d/1ZWBWXbF4JDOwsWdVCUpkjLubAIoHrFCO/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/groupInfo.png" class ="image" style="padding:20px; width:620px; height:370px"></a>
+                    <div class="middle">
+                        <div class="text">Watch Now!</div>
+                    </div>
+                </div>
 
-    <div>
-    <p><h4>Personal Health Assessment</h4></p>
-    <p>Please click on the photos below to see the file. Remember to use your AdDU account.</p>
-    <p style="margin-left:300px"><a href="https://drive.google.com/file/d/13gUu5Lq-qYjf1LN2pojyrcCsB_qpRg-4/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/personalHealthAssessment.png" style="width:620px; height:370px"></a></p>
-    </div>
+                <div class="container" style="float:right"></div>
+                    <a href="https://drive.google.com/file/d/1AoptwlZh77ugoKIZgp3dObDZeUJSQUmV/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/indivInfo.png" class="image" style="padding:20px; width:620px; height:370px"></a>
+                    <div class="middle">
+                        <div class="text">Watch Now!</div>
+                    </div>
+                </div>
+                
+                <br>
+            </p>
+
+        <br><br>
 
         <div>
-    <h4>Static and Dynamic Stretches</h4>
-    <p>Please click on the photos below to see the videos! The one on the left is a group's output, while the other one is individual. Remember to use your AdDU account.</p>
-    <p>
-    <a href="https://drive.google.com/file/d/1VYJDS4URvW4lYAxIk4SbS7E49ankF1JT/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/groupStretches.png" style="float:left; padding:20px; width:620px; height:370px"></a>
-    <a href="https://drive.google.com/file/d/1K1wAWx0eCm57VBANZ-jTo_Rx5s7j9_qb/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/indivStretches.png" style="float:right; padding:20px; width:620px; height:370px"></a>
-    </p>
-    </div>
+            <p><h4>Personal Health Assessment</h4></p>
+            <p>Please click on the photos below to see the file. Remember to use your AdDU account.</p>
+
+            <div class="container">
+                <p style="margin-left:300px"><a href="https://drive.google.com/file/d/13gUu5Lq-qYjf1LN2pojyrcCsB_qpRg-4/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/personalHealthAssessment.png" class="image" style="width:620px; height:370px"></a></p>
+                <div class="middle">
+                    <div class="text">See Document!</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <h4>Static and Dynamic Stretches</h4>
+            <p>Please click on the photos below to see the videos! The one on the left is a group's output, while the other one is individual. Remember to use your AdDU account.</p>
+            
+            <p>
+                <div class="container" style="float:left">
+                    <a href="https://drive.google.com/file/d/1VYJDS4URvW4lYAxIk4SbS7E49ankF1JT/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/groupStretches.png" class="image" style="padding:20px; width:620px; height:370px"></a>
+                    <div class="middle">
+                        <div class="text">Watch Now!</div>
+                    </div>
+                </div>
+
+                <div class="container" style="float:right">
+                    <a href="https://drive.google.com/file/d/1K1wAWx0eCm57VBANZ-jTo_Rx5s7j9_qb/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/indivStretches.png" class="image" style="padding:20px; width:620px; height:370px"></a>
+                    <div class="middle">
+                        <div class="text">Watch Now!</div>
+                    </div>
+                </div>
+            </p>
+        
+        </div>
 
   </div>
 
@@ -153,8 +225,19 @@
             I also felt sad because I realized that there's a lot to improve on, especially in push-ups. But this motivated me as well to do even better. As you click on the picture and watch the videos, I ask for your kindness. 
         </p>
         <p>
-        <a href="https://drive.google.com/drive/folders/1KxjGZnuNh5U2FctLWlKyD4dlWWjN0f_b?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/mcsPreTest.png" style="float:left; padding:20px; width:620px; height:370px"></a>
-        <a href="https://drive.google.com/file/d/1nLfU5ITrtRGhhOiL4--5YaU2gd6jkPPg/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/mcsPreTestTemp.png" style="float:right; padding:20px; width:620px; height:370px"></a>
+            <div class="container" style="float:left">
+                <a href="https://drive.google.com/drive/folders/1KxjGZnuNh5U2FctLWlKyD4dlWWjN0f_b?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/mcsPreTest.png" class="image" style="padding:20px; width:620px; height:370px"></a>
+                <div class="middle">
+                    <div class="text">Watch Now!</div>
+                </div>
+            </div>
+
+            <div class="container" style="float:right">
+                <a href="https://drive.google.com/file/d/1nLfU5ITrtRGhhOiL4--5YaU2gd6jkPPg/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/mcsPreTestTemp.png" class="image" style="padding:20px; width:620px; height:370px"></a>
+                <div class="middle">
+                    <div class="text">See Document!</div>
+                </div>
+            </div>
         </p>
     </div>
         
@@ -169,16 +252,38 @@
             4. Prisoner Squat
         </p>
         <p>
-            <a href="https://drive.google.com/file/d/1BLCoMuk2y8dzqf41dPuSufWqAtH3Uo3R/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/workoutC.png" style="float:left; padding:20px; width:620px; height:370px"></a>
-            <a href="https://drive.google.com/file/d/1HY6fARo4tCz-Wk-hwyBjzvxSWeV6M_wT/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/workoutLog.png" style="float:right; padding:20px; width:620px; height:370px"></a>
+            <div class="container" style="float:left">
+                <a href="https://drive.google.com/file/d/1BLCoMuk2y8dzqf41dPuSufWqAtH3Uo3R/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/workoutC.png" class="image" style="padding:20px; width:620px; height:370px"></a>
+                <div class="middle">
+                    <div class="text">Watch Now!</div>
+                </div>
+            </div>
+
+            <div class="container" style="float:right">
+                <a href="https://drive.google.com/file/d/1HY6fARo4tCz-Wk-hwyBjzvxSWeV6M_wT/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/workoutLog.png" class="image" style="padding:20px; width:620px; height:370px"></a>
+                <div class="middle">
+                    <div class="text">See Documnet!</div>
+                </div>
+            </div>
         </p>
     </div>
 
     <div class="w3-container w3-padding-32" id="mcsPostTest">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Movement Competency Screen Post-Test</b></h3>
          <p>
-            <a href="https://drive.google.com/file/d/11-hpoSnRgBzW3DP4hNnHOLJ2S7jDwIwI/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/mcsPostTest.png" style="float:left; padding:20px; width:620px; height:370px"></a>
-            <a href="https://drive.google.com/file/d/1VMmjgGuD8hXaUIvfaesk4LN8a4IPNOQc/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/mcsPostTestTemp.png" style="float:right; padding:20px; width:620px; height:370px"></a>
+            <div class="container" style="float:left">
+                <a href="https://drive.google.com/file/d/11-hpoSnRgBzW3DP4hNnHOLJ2S7jDwIwI/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/mcsPostTest.png" class="image" style="padding:20px; width:620px; height:370px"></a>
+                <div class="middle">
+                    <div class="text">Watch Now!</div>
+                </div>
+            </div>
+
+            <div class="container" style="float:right">
+                <a href="https://drive.google.com/file/d/1VMmjgGuD8hXaUIvfaesk4LN8a4IPNOQc/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="resources/mcsPostTestTemp.png" class="image" style="padding:20px; width:620px; height:370px"></a>
+                <div class="middle">
+                    <div class="text">See Document!</div>
+                </div>
+            </div>
         </p>
     </div>
 
