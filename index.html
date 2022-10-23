@@ -7,14 +7,29 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <style>
-    #dTable {
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
       border-collapse: collapse;
       width: 100%;
-      text-align: left;
-      border: 1px solid rgb(0, 0, 0);
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid #ddd;
       padding: 8px;
     }
-    </style>
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+</style>
 
 </head>
 <body>
@@ -73,14 +88,11 @@
     </p>
     <p>
         Here are some of the Do's and Don'ts:
-        <table id="dTable">
-            <thead style="text-align:center">
+        <table id="customers">
                 <tr>
                     <th>Do's</th>
                     <th>Don'ts</th>
                 </tr>
-            </thead>
-            <tbody style="font-weight:normal">
                 <tr>
                     <th>
                         Do exercise when you're in good condition.
@@ -117,7 +129,6 @@
                         Don't be too obsessed with exercise.
                     </th>
                 </tr>
-            </tbody>
         </table>
     </p>
   </div>
